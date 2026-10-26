@@ -1,0 +1,32 @@
+# model artifacts (large / regenerated)
+*.onnx
+*.engine
+*.trt
+*.pth
+*.pt
+
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+ortgpu-venv/
+onnx_models/trt_cache*/
+
+# dataset-derived dumps (never publish third-party data)
+data/
+
+# outputs
+results/*.csv
+*.log
+
+# personal planning / notes docs (never publish)
+BRIEF.md
+LEARNINGS.md
+
+# minimal results-only repo: keep local work out (scripts, raw outputs, artifacts).
+# Some of these contain machine-specific absolute paths; the README holds the results.
+scripts/
+onnx_models/
+results/
+requirements-ortgpu.txt
